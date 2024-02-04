@@ -8,34 +8,38 @@
 }
 
 :root{
+    --blanco: #fff;
     --primarioClaro: #f0f8ff;
     --primarioOscuro: #323840;
     --secundario: #2fa1ff;
 }
 
 html{
-    background-color: var(--primarioClaro);
+    background-color: var(--blanco);
 }
 
+/* NAVEGACION */
 nav{
     background-color: var(--secundario);
     display: block;
     justify-content: space-between;
 }
-/* @media (min-width: 900px){
+@media (min-width: 900px){
     nav{
         display: flex;
         justify-content: space-between;
         height: 75px;
     }
-} */
-
-nav .logo{
-    background-image: url(../logos/LogoClaro.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+}
+nav .logo img{
+    
     width: 100%;
-    height: 200px;
+}
+@media (min-width: 900px){
+    nav .logo img{
+        width: auto;
+        height: 100%;
+    }
 }
 
 nav ul{
@@ -44,15 +48,15 @@ nav ul{
     flex-direction: column;
     text-align: center;
 }
-/* @media (min-width: 900px){
+@media (min-width: 900px){
     nav ul{
         display: block;
-        text-align: right;
     }
-} */
+}
 
 nav ul li{
     display: inline-block;
+    height: 100%;
 }
 
 nav ul li a{
@@ -65,12 +69,13 @@ nav ul li a{
     transition: 0.5s;
     margin-right: 50px;
     width: 100%;
+    height: 100%;
 }
-/* @media (min-width: 900px){
+@media (min-width: 900px){
     nav ul li a{
         width: auto;
     }
-} */
+}
 
 nav ul li a:hover{
     background-color: var(--primarioClaro);
@@ -78,4 +83,58 @@ nav ul li a:hover{
     transition: 0.5s;
 }
 
+/* CONTENEDORES */
+.sobremi,
+.habilidades,
+.proyectos,
+.contacto{
+    background-color: var(--primarioClaro);
+    border: solid 1px;
+    border-radius: 20px;
+    margin: 25px;
+    display: flex;
+
+}
+
+/* SOBREMI */
+.sobremi .imgpro{
+    background-image: url(../logos/programador.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.sobremi .sobremitext{
+    width: 75%;
+    margin: 10px;
+}
+
+/* HABILIDADES */
+.habilidades{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.habilidades .frontEnd,
+.habilidades .backEnd{
+    list-style-type: none;
+}
+
+.habilidades .frontEnd svg,
+.habilidades .backEnd svg{
+    border: solid 3px;
+}
+
+.habilidades .frontEnd svg:hover{
+    
+}
+
+/* PROYECTOS */
+
+
+/* CONTACTO */
 
