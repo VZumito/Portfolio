@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="index.html"><img src="./logos/LogoClaro.png" alt="Victor Zamorano"></a>
-        </div>        
+    <header>
+        <a class="logo" href="index.html"><img src="./logos/LogoClaro.png" alt="Victor Zamorano"></a>
+    </header>
+    <nav>        
         <ul class="navegacion">
             <li><a href="#sobremi" class="nav-link">Sobre mí</a></li>
             <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
@@ -49,7 +49,26 @@
             <div></div>
     </section>
     <section class="contacto" id="contacto">
-
+        <form action="" id="formulario" class="formulario">
+            <fieldset>
+                <legend class="tituloFormulario">CONTACTO</legend>
+                <div class="campo">
+                    <label>Nombre</label>
+                    <input class="inputText" type="text" placeholder="Escriba su nombre aqui">    
+                </div>
+                <div class="campo">
+                    <label>Email</label>
+                    <input class="inputText" type="text" placeholder="Escriba su correo electronico aqui">
+                </div>
+                <div class="campo">
+                    <label>Mensaje</label>
+                    <textarea class="inputText" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <div class="botonEnviar">
+                    <input type="submit" class="boton" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
     </section>
 </body>
 </html>
