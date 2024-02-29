@@ -1,4 +1,23 @@
-function mostrarMensaje(tipo, mensaje){
+const datos ={
+    nombre: '',
+    email: '',
+    mensaje: ''
+}
+const nombre = document.querySelector('#nombre')
+const email = document.querySelector('#email')
+const mensaje = document.querySelector('#mensaje')
+const formulario = document.querySelector(".formulario")
+
+nombre.addEventListener('input', leerTexto)
+email.addEventListener('input', leerTexto)
+mensaje.addEventListener('input', leerTexto)
+
+function leerTexto(){
+    console.log(e)
+    datos[e.target.id]=e.target.value
+}
+
+function mostrarError(tipo, mensaje){
     const alerta = document.createElement('p')
     alerta.textContent = mensaje;
     alerta.classList.add(tipo);
@@ -8,12 +27,17 @@ function mostrarMensaje(tipo, mensaje){
     },2000)
 }
 
-const {nombre, email, mensaje} = datos;
-if (nombre === "" || email === "" || mensaje === ""){
-    mostrarMensaje("Error", "Todos los campos son obligatorios")
-    return;
-} else {
-    mostrarMensaje("Correcto", "Formulario enviado correctamente")
+function mostrarMensaje(){
+    console,log(mensaje)
 }
 
-const formulario = document.querySelector
+formulario.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const {nombre, email, mensaje} = datos;
+    if(nombre === "" || email === "" || mensajes ===""){
+            mostrarError("error", "Todos los campos son obligatorios")
+        return;
+    }
+
+})

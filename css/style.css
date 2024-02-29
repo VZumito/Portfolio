@@ -17,6 +17,10 @@
 html{
     font-size: 62.5%;
     background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 }
 
 /* NAVEGACION */
@@ -94,7 +98,7 @@ nav ul li a:hover{
     border-radius: 2rem;
     margin: 2.5rem;
     display: flex;
-
+    max-width: 1000px;
 }
 
 /* SOBREMI */
@@ -109,8 +113,10 @@ nav ul li a:hover{
 }
 
 .sobremi .sobremitext{
-    width: 75%;
+    width: 100%;
     margin: 1rem;
+    font-size: 1.5rem;
+    vertical-align: middle;
 }
 
 /* HABILIDADES */
@@ -123,19 +129,57 @@ nav ul li a:hover{
 .habilidades .frontEnd,
 .habilidades .backEnd{
     list-style-type: none;
+    text-align: center;
+}
+
+.habilidades h2 {
+    margin-bottom: 2rem;
 }
 
 .habilidades .frontEnd svg,
 .habilidades .backEnd svg{
     border: solid 0.2rem;
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--blanco);
+    padding: 2rem;     
 }
 
-.habilidades .frontEnd svg:hover{
-    
-}
 
 /* PROYECTOS */
 
 
 /* CONTACTO */
+.contacto {
+    justify-content: center;
+}
+
+.contacto .formulario{
+    
+}
+
+.contacto .formulario fieldset{
+    text-align: center;
+    border: 0px;
+    width: 500px;
+    padding: 20px;
+}
+
+.campo label{
+    display: block;
+    color: var(--primarioOscuro);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+.error {
+    background-color: red;
+    padding: 1rem .5rem;
+    text-align: center;
+    color: var(--blanco);
+    transition: 0.5s;
+}
+
 
