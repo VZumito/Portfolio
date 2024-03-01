@@ -1,41 +1,15 @@
-const datos ={
-    nombre: '',
-    email: '',
-    mensaje: ''
-}
-const nombre = document.querySelector('#nombre');
-const email = document.querySelector('#email');
-const formulario = document.querySelector(".formulario");
-
-nombre.addEventListener('input', leerTexto);
-email.addEventListener('input', leerTexto);
-
-function leerTexto(){
-    console.log(e);
-    datos[e.target.id]=e.target.value;
-}
-
-function mostrarError(tipo, mensaje){
-    const alerta = document.createElement('p');
-    alerta.textContent = mensaje;
-    alerta.classList.add(tipo);
-    formulario.appendChild(alerta);
-    setTimeout(()=>{
-        alerta.remove();
-    },2000)
-}
-
-function mostrarMensaje(){
-    console,log(mensaje);
-}
-
-formulario.addEventListener('submit', function(e){
-    e.preventDefault();
-
-    const {nombre, email, mensaje} = datos;
-    if(nombre === "" || email === "" || mensajes ===""){
-            mostrarError("error", "Todos los campos son obligatorios");
-        return;
+document.getElementById('formulario').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    var nombre = document.getElementById('nombre').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var mensaje = document.getElementById('mensaje').value.trim();
+  
+    if (nombre === '' || email === '' || mensaje === '') {
+      alert('Por favor, rellene todos los campos del formulario.');
+    } else {
+      
+      alert('Los datos se han enviado correctamente.');
+      
     }
-
-})
+  });
