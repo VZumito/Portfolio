@@ -24,9 +24,28 @@ html{
 }
 
 /* NAVEGACION */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 40px auto;
+    max-width: 1110px;
+}
+
+.toggle {
+    border: none;
+    background: none;
+    margin-right: 10rem;
+}
+
+.menu {
+    display: none;
+}
+
 nav{
     background-color: var(--secundario);
-    display: block;
+    display: flex;
     justify-content: space-between;
 }
 @media (min-width: 900px){
@@ -37,7 +56,8 @@ nav{
     }
 }
 .logo img{
-    
+    margin-left: 5rem;
+    max-width: 300px;
     width: 100%;
 }
 @media (min-width: 900px){
@@ -175,7 +195,7 @@ nav ul li a:hover{
 }
 
 .error {
-    background-color: red;
-    padding: 1rem 0rem;
+    background-color: var(--secundario);
+    
 }
 
