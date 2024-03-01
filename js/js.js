@@ -3,32 +3,30 @@ const datos ={
     email: '',
     mensaje: ''
 }
-const nombre = document.querySelector('#nombre')
-const email = document.querySelector('#email')
-const mensaje = document.querySelector('#mensaje')
-const formulario = document.querySelector(".formulario")
+const nombre = document.querySelector('#nombre');
+const email = document.querySelector('#email');
+const formulario = document.querySelector(".formulario");
 
-nombre.addEventListener('input', leerTexto)
-email.addEventListener('input', leerTexto)
-mensaje.addEventListener('input', leerTexto)
+nombre.addEventListener('input', leerTexto);
+email.addEventListener('input', leerTexto);
 
 function leerTexto(){
-    console.log(e)
-    datos[e.target.id]=e.target.value
+    console.log(e);
+    datos[e.target.id]=e.target.value;
 }
 
 function mostrarError(tipo, mensaje){
-    const alerta = document.createElement('p')
+    const alerta = document.createElement('p');
     alerta.textContent = mensaje;
     alerta.classList.add(tipo);
-    formulario.appendChild(alerta)
+    formulario.appendChild(alerta);
     setTimeout(()=>{
         alerta.remove();
     },2000)
 }
 
 function mostrarMensaje(){
-    console,log(mensaje)
+    console,log(mensaje);
 }
 
 formulario.addEventListener('submit', function(e){
@@ -36,7 +34,7 @@ formulario.addEventListener('submit', function(e){
 
     const {nombre, email, mensaje} = datos;
     if(nombre === "" || email === "" || mensajes ===""){
-            mostrarError("error", "Todos los campos son obligatorios")
+            mostrarError("error", "Todos los campos son obligatorios");
         return;
     }
 
