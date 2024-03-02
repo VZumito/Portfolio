@@ -50,9 +50,13 @@ function toggleMenu(){
     if (!showMenu){
         toggleIcon.src='./logos/icon-close.svg';
         showMenu = true;
+        menu.classList.add('menu');
+        menu.classList.remove('menuInvisible');
     } else {
         toggleIcon.src='./logos/icon-hamburger.svg';
         showMenu = false;
+        menu.classList.add('menuInvisible');
+        menu.classList.remove('menu');
     }
 }
 

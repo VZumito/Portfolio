@@ -21,70 +21,67 @@ html{
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    max-width: 1110px;
+    
 }
 
 /* NAVEGACION */
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 95%;
     margin: 40px auto;
     max-width: 1110px;
 }
 
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .toggle {
     border: none;
     background: none;
-    margin-right: 10rem;
+    margin-right: 15rem;
 }
 
-.menu {
+.menu{
+    background-color: var(--secundario);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.menuInvisible{
     display: none;
 }
 
-nav{
-    background-color: var(--secundario);
-    display: flex;
-    justify-content: space-between;
-}
-@media (min-width: 900px){
-    nav{
-        display: flex;
-        justify-content: space-between;
-        height: 7.5rem;
-    }
-}
 .logo img{
     margin-left: 5rem;
     max-width: 300px;
     width: 100%;
 }
-@media (min-width: 900px){
-    nav .logo img{
-        width: auto;
-        height: 100%;
-    }
-}
 
-nav ul{
+
+.menu ul{
     list-style-type: none;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-@media (min-width: 900px){
-    nav ul{
-        display: block;
-    }
-}
 
-nav ul li{
+
+.menu ul li{
     display: inline-block;
     height: 100%;
 }
 
-nav ul li a{
+.menu ul li a{
     text-decoration: none;
     color: var(--primarioClaro);
     font-weight: bold;
@@ -96,13 +93,9 @@ nav ul li a{
     width: 100%;
     height: 100%;
 }
-@media (min-width: 900px){
-    nav ul li a{
-        width: auto;
-    }
-}
 
-nav ul li a:hover{
+
+.menu ul li a:hover{
     background-color: var(--primarioClaro);
     color: var(--secundario);
     transition: 0.5s;
@@ -196,6 +189,6 @@ nav ul li a:hover{
 
 .error {
     background-color: var(--secundario);
-    
+    color: var(--blanco);
 }
 
