@@ -67,7 +67,6 @@ function toggleMenu(){
 
 const proyectosCont = document.querySelector("#proyectosCont");
 
-
 const requestURL = "./js/json.json";
 const request = new XMLHttpRequest();
 request.open("GET", requestURL);
@@ -94,7 +93,9 @@ function showProjects(jsonObj) {
       myH3.textContent = projects[i].pName;
       myImg.src = projects[i].img;
       myLink.href = projects[i].url;
+      myLink.textContent = "Link";
       myGit.href = projects[i].gitHub;
+      myGit.textContent = "GitHub";
 
       proyecto.classList.add("proyecto");
       mydiv.classList.add("links");
