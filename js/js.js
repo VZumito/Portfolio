@@ -65,10 +65,10 @@ function toggleMenu(){
  // JSON
 
 
-const proyectosCont = document.querySelector("proyectosCont");
+const proyectosCont = document.querySelector("#proyectosCont");
 
 
-const requestURL = "./json.json";
+const requestURL = "./js/json.json";
 const request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = "json";
@@ -91,10 +91,10 @@ function showProjects(jsonObj) {
       const myLink = document.createElement("a");
       const myGit = document.createElement("a");
   
-      myH3.textContent = proyecto[i].name;
-      myImg.textContent = proyecto[i].img;
-      myLink.textContent = proyecto[i].url;
-      myGit.textContent = proyecto[i].gitHub;
+      myH3.textContent = projects[i].pName;
+      myImg.src = projects[i].img;
+      myLink.href = projects[i].url;
+      myGit.href = projects[i].gitHub;
 
       proyecto.classList.add("proyecto");
       mydiv.classList.add("links");

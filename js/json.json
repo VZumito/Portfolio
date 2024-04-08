@@ -2,49 +2,49 @@
     "name": "Proyectos",
     "proyectos": [
         {
-            "name": "BlogCafe",
+            "pName": "BlogCafe",
             "img": "./img/BlogCafe.png",
             "url": "https://vzumito.github.io/blogCafe/",
             "gitHub": "https://github.com/VZumito/blogCafe"
         },
         {
-            "name": "Dark",
+            "pName": "Dark",
             "img": "./img/Dark.png",
             "url": "https://vzumito.github.io/DarkTheme/",
             "gitHub": "https://github.com/VZumito/DarkTheme"
         },
         {
-            "name": "Examen1",
+            "pName": "Examen1",
             "img": "./img/Examen1.png",
             "url": "https://vzumito.github.io/LNDExamen1/",
             "gitHub": "https://github.com/VZumito/LNDExamen1"
         },
         {
-            "name": "Examen2",
+            "pName": "Examen2",
             "img": "./img/Examen2.png",
             "url": "https://vzumito.github.io/LND-Examen2/",
             "gitHub": "https://github.com/VZumito/LND-Examen2"
         },
         {
-            "name": "Examen3",
+            "pName": "Examen3",
             "img": "./img/Examen3.png",
             "url": "https://vzumito.github.io/Examen2evLND/",
             "gitHub": "https://github.com/VZumito/Examen2evLND"
         },
         {
-            "name": "Freelancer",
+            "pName": "Freelancer",
             "img": "./img/Freelancer.png",
             "url": "https://vzumito.github.io/Freelance/",
             "gitHub": "https://github.com/VZumito/Freelance"
         },
         {
-            "name": "Huddle",
+            "pName": "Huddle",
             "img": "./img/huddle.png",
             "url": "https://vzumito.github.io/huddle/",
             "gitHub": "https://github.com/VZumito/huddle"
         },
         {
-            "name": "Stats",
+            "pName": "Stats",
             "img": "./img/stats.png",
             "url": "https://vzumito.github.io/statscard/",
             "gitHub": "https://github.com/VZumito/statscard"
