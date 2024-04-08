@@ -25,6 +25,13 @@ html{
     
 }
 
+@media (min-width: 900px){
+    html{
+        max-width: 2000px;
+        flex-direction: row;
+    }
+}
+
 /* NAVEGACION */
 
 header {
@@ -101,10 +108,59 @@ header {
     transition: 0.5s;
 }
 
+.menuPC{
+    display: none;
+}
+
+@media (min-width: 900px){
+    .toggle{
+        display: none;
+    }
+    .menuPC{
+        background-color: var(--secundario);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .menuPC ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    
+    .menuPC ul li{
+        display: inline-block;
+        height: 100%;
+    }
+    
+    .menuPC ul li a{
+        text-decoration: none;
+        color: var(--primarioClaro);
+        font-weight: bold;
+        font-size: 1.6rem;
+        display: block;
+        padding: 1rem;
+        transition: 0.5s;
+        margin-right: 5rem;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .menuPC ul li a:hover{
+        background-color: var(--primarioClaro);
+        color: var(--secundario);
+        transition: 0.5s;
+    }
+}
+
 /* CONTENEDORES */
 .sobremi,
 .habilidades,
-.proyectos,
+.proyectosCont,
 .contacto{
     background-color: var(--primarioClaro);
     border: solid 0.2rem;
@@ -160,7 +216,25 @@ header {
 
 
 /* PROYECTOS */
+.proyectosCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.proyecto img{
+    max-width: 600px;
+}
 
+.proyecto a{
+    text-decoration: none;
+    color: var(--primarioOscuro);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.links a{
+    margin: 10px 20px;
+}
 
 /* CONTACTO */
 .contacto {
